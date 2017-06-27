@@ -229,6 +229,9 @@ hr.grey:before {
 .tech li:before {
   content: '';
 }
+.tech li:first-child {
+  font-weight: bold;
+}
 .techFullContainer {
   width: 100%;
 }
