@@ -3,13 +3,14 @@
   "author": "kaustavha",
   "license": "Feel free to use this as a boilerplate if you like",
   "devDependencies": {
+    "browser-sync": "latest",
     "gulp": "latest",
     "gulp-clean": "^0.3.1",
-    "gulp-jade": "latest",
-    "gulp-stylus": "latest",
-    "gulp-util": "latest",
     "gulp-coffee": "latest",
-    "browser-sync": "latest"
+    "gulp-jade": "latest",
+    "gulp-open": "^2.0.0",
+    "gulp-stylus": "latest",
+    "gulp-util": "latest"
   },
   "scripts": {
     "build": "gulp",
