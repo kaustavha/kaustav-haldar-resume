@@ -115,6 +115,7 @@ ul li:before {
   content: '\e80b  ';
 }
 .trigger {
+  z-index: 1000;
   position: fixed;
   left: 5px;
 }
