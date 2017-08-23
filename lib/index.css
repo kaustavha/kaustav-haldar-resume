@@ -177,18 +177,31 @@ hr.grey:before {
 }
 @media print {
   .trigger {
-    display: none;
+    display: none !important;
   }
   hr {
-    display: none;
-    height: 0px;
-    margin: 0px 0px;
+    height: 2px;
+    margin: 0px 0px !important;
+  }
+  hr.blue:before {
+    margin-left: 25%;
+    width: 50%;
+    border-top: solid 1px #308dff;
+  }
+  #header-seperator {
+    width: 100% !important;
+    margin-left: 0 !important;
   }
   hr.blue {
-    background-color: #00f;
+    background: #308dff !important;
+    height: 1px !important;
   }
   .sectionContainer {
-    padding: 0px 0px;
+    padding: 0px 0px !important;
+  }
+  .footer {
+    height: 0px !important;
+    display: none !important;
   }
 }
 .header {
