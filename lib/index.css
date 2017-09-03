@@ -40,10 +40,10 @@ h3 {
   margin: 0px 0px;
 }
 h4 {
-  font-size: 90%;
+  font-size: 85%;
   font-weight: 400;
-  line-height: 18px;
-  margin: 5px 0px;
+  line-height: 15px;
+  margin: 2px 0px;
 }
 h5 {
   margin-top: -20px;
@@ -107,6 +107,7 @@ a:before {
 ul li {
   margin: 5px;
   text-indent: -9px;
+  line-height: 18px;
 }
 ul li:before {
   padding-right: 3px;
@@ -207,6 +208,13 @@ hr.grey:before {
   .footer {
     margin-top: -2px;
     margin-bottom: 0px;
+  }
+  a {
+    text-decoration: none;
+    color: #308dff;
+  }
+  a:visited {
+    color: #308dff;
   }
 }
 .header {
