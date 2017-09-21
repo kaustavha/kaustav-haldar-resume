@@ -196,6 +196,7 @@ hr.grey:before {
     margin-left: 0 !important;
   }
   hr.blue {
+    margin-top: 1px;
     background: #308dff !important;
     height: 1px !important;
   }
@@ -267,6 +268,12 @@ hr.grey:before {
 }
 .job ul {
   margin: 0px 0px;
+}
+.job h3 {
+  font-weight: 400;
+}
+.job h4 {
+  font-weight: 600;
 }
 .project {
   position: relative;
