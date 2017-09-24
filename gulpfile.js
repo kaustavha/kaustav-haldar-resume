@@ -21,7 +21,7 @@ gulp.task('scripts', function() {
 gulp.task('templates', function() {
   var locs = {};
   gulp.src('./src/index.jade')
-    .pipe(jade({locals: locs}))
+    .pipe(jade({pretty:true}))
     .pipe(gulp.dest('./'))
 });
 

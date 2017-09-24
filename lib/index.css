@@ -177,6 +177,9 @@ hr.grey:before {
   z-index: 1;
 }
 @media print {
+  .icon-link {
+    display: none;
+  }
   .trigger {
     display: none !important;
   }
@@ -302,10 +305,10 @@ body {
   font-size: 85%;
 }
 .full {
-  display: inline-table;
+  display: none;
 }
 .min {
-  display: none;
+  display: inline-table;
 }
 .content {
   position: relative;
