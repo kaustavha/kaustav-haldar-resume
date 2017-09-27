@@ -8,7 +8,6 @@
     "gulp-clean": "^0.3.1",
     "gulp-coffee": "latest",
     "gulp-jade": "latest",
-    "gulp-open": "^2.0.0",
     "gulp-stylus": "latest",
     "gulp-util": "latest"
   },

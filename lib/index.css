@@ -31,7 +31,7 @@ h1 {
   font-size: 120%;
 }
 h2 {
-  font-size: 150%;
+  font-size: 130%;
   font-weight: 800;
 }
 h3 {
@@ -107,7 +107,7 @@ a:before {
 ul li {
   margin: 5px;
   text-indent: -9px;
-  line-height: 18px;
+  line-height: 20px;
 }
 ul li:before {
   padding-right: 3px;
@@ -183,10 +183,6 @@ hr.grey:before {
   .trigger {
     display: none !important;
   }
-  hr {
-    height: 2px;
-    margin: 0px 0px !important;
-  }
   hr.blue:before {
     margin-left: 25%;
     width: 50%;
@@ -199,9 +195,8 @@ hr.grey:before {
     margin-left: 0 !important;
   }
   hr.blue {
-    margin-top: 1px;
+    margin: 10px;
     background: #308dff !important;
-    height: 1px !important;
   }
   hr.grey {
     display: none;
@@ -284,9 +279,6 @@ hr.grey:before {
   width: 435px;
   height: 65px;
   margin: 5px;
-}
-.project h2 {
-  font-size: 120%;
 }
 .education h4 {
   font-weight: 300;

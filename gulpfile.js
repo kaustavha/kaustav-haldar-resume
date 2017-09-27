@@ -3,14 +3,7 @@ var gulp = require('gulp'),
     jade = require('gulp-jade'),
     stylus = require('gulp-stylus'),
     coffee = require('gulp-coffee'),
-    browserSync = require('browser-sync'),
-    open = require('gulp-open');
-
-
-gulp.task('open', function(){
- gulp.src('./index.html')
-    .pipe(open());
-});
+    browserSync = require('browser-sync');
 
 gulp.task('scripts', function() {
   gulp.src('./src/**/*.coffee')
