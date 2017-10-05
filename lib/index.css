@@ -28,14 +28,14 @@ ul li {
   font-weight: 300;
 }
 h1 {
-  font-size: 120%;
+  font-size: 110%;
 }
 h2 {
-  font-size: 130%;
+  font-size: 120%;
   font-weight: 800;
 }
 h3 {
-  font-size: 110%;
+  font-size: 105%;
   font-weight: 600;
   margin: 0px 0px;
 }
@@ -89,12 +89,12 @@ a:before {
 .legend {
   float: left;
   text-align: center;
-  font-size: 165%;
+  font-size: 140%;
   margin-top: 10px;
   width: 190px;
 }
 .categoryCenter {
-  font-size: 165%;
+  font-size: 140%;
   text-align: center;
 }
 .legend {
@@ -177,11 +177,23 @@ hr.grey:before {
   z-index: 1;
 }
 @media print {
+  .min {
+    margin-bottom: -20px;
+  }
+  .footer {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
   .icon-link {
     display: none;
   }
   .trigger {
     display: none !important;
+  }
+  hr {
+    height: 2px;
+    margin: 1px 0px !important;
   }
   hr.blue:before {
     margin-left: 25%;
@@ -221,16 +233,14 @@ hr.grey:before {
 }
 .header {
   display: block;
-  height: 85px;
-  padding-bottom: 15px;
 }
 #header-seperator {
   height: 3px;
   width: 100%;
 }
 .title-right {
+  width: 350px;
   display: inline-flex;
-  margin-left: 175px;
   float: right;
 }
 .address {
@@ -241,6 +251,10 @@ hr.grey:before {
 .infoContact a {
   color: #308dff;
 }
+.infoContact li {
+  margin: 0px;
+  line-heigh: 0px;
+}
 .infoContact li:before {
   content: '';
 }
@@ -249,7 +263,13 @@ hr.grey:before {
 }
 .title h1 {
   color: #4d4d4d;
-  font-size: 350%;
+  font-size: 250%;
+}
+.titleContact {
+  float: left;
+}
+.titleLinks {
+  float: right;
 }
 .tech {
   display: inline-table;
