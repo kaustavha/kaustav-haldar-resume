@@ -36,12 +36,12 @@ h2 {
 }
 h3 {
   font-size: 105%;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0px 0px;
 }
 h4 {
   font-size: 85%;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 15px;
   margin: 2px 0px;
 }
@@ -69,7 +69,7 @@ a:before {
 .job,
 .project,
 .education {
-  margin: 5px 10px;
+  margin: 5px 5px;
   padding-left: 15px;
   border-left: 1px solid #308dff;
   display: block;
@@ -192,10 +192,12 @@ hr.grey:before {
     display: none !important;
   }
   hr {
+    display: none;
     height: 2px;
     margin: 1px 0px !important;
   }
   hr.blue:before {
+    display: none;
     margin-left: 25%;
     width: 50%;
     border-top: solid 1px #308dff;
@@ -207,6 +209,7 @@ hr.grey:before {
     margin-left: 0 !important;
   }
   hr.blue {
+    display: none;
     margin: 10px;
     background: #308dff !important;
   }
@@ -254,6 +257,7 @@ hr.grey:before {
 .infoContact li {
   margin: 0px;
   line-heigh: 0px;
+  font-weight: 200;
 }
 .infoContact li:before {
   content: '';
@@ -289,12 +293,6 @@ hr.grey:before {
 }
 .job ul {
   margin: 0px 0px;
-}
-.job h3 {
-  font-weight: 400;
-}
-.job h4 {
-  font-weight: 600;
 }
 .project {
   position: relative;
