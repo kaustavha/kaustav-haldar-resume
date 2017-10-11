@@ -14,8 +14,8 @@ h3,
 .sideHeader,
 h5,
 h6 {
-  font-size: 110%;
-  font-family: monospace;
+  font-size: 85%;
+  font-family: 'Cantarell', sans-serif;
   float: right;
   display: inline;
 }
@@ -267,7 +267,7 @@ hr.grey:before {
 }
 .title h1 {
   color: #4d4d4d;
-  font-size: 250%;
+  font-size: 300%;
 }
 .titleContact {
   float: left;
