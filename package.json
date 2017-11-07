@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "gulp",
-    "clean": "gulp clean"
+    "clean": "gulp clean",
+    "git": "git add . && git commit -am 'Autoupdate' && git push"
   }
 }
