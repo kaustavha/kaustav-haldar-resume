@@ -14,6 +14,6 @@
   "scripts": {
     "build": "gulp",
     "clean": "gulp clean",
-    "git": "git add . && git commit -am 'Autoupdate' && git push"
+    "git": "git add . && git commit -am 'Autoupdate' && git push && cd .. && npm run update"
   }
 }
