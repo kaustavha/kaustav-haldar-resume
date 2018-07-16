@@ -2,24 +2,42 @@
   .job
     span
       h2
+        a(href='https://www.ibm.com/ca-en/marketplace/business-intelligence') IBM Cognos Analytics
+      h5 January 2018 - Present
+      h6 Ottawa, Ontario, CA
+    h3 Software Engineer
+    h4 JavaScript (ES6), HTML, SASS, React, JSX, Mobex, Travis, Python, Tensorflow, Docker
+    ul
+      li Architected and delivered 2 massive cross-team multi-codebase features
+      li Championed code-base modernization using ES6, React
+      li Reduced CI failures by 90% by driving Travis integration across multiple teams and codebases
+      li Published 2 patents related to web app architecture and hybrid blockchains
+      li Won an internal Machine Learning competition, CNNs using Tensorflow, TF-Slim
+      li Mentored interns and full-timers, ran workshops on blockchains, Travis, git
+      li Contributed to devtools improving developer productivity and halving new hire onboarding time
+      li Interviewed candidates and contributed to internal interview questions
+
+  .job
+    span
+      h2
         a(href='http://www.rackspace.com/') Rackspace
       h5 July 2015 - March 2016
       h6 San Francisco, CA, USA
     h3 Software Engineer Intern
     h4 Go, Lua, JS, Python, Ruby, Java, C++, Bash;  Hadoop, Hive, Kafka, MongoDB, ElasticSearch, Logstash, Kibana, Grafana, Docker, Chef, Travis, Jenkins, Ansible
     ul
-      li Achieved a 10x speed and capacity increase by building microservices for a distributed monitoring system and replacing data pipelines
+      li Achieved a 10x speed and capacity increase by building Go microservices for a distributed monitoring system and replacing data pipelines with Kafka
       li Doubled 
-        +link('https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent') monitoring agent 
+        +link('https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent') Lua monitoring agent 
         | coverage area by writing or integrating ~100 plugins, included customer outreach
       li Improved extensibility of agent by writing 
         +link('https://github.com/luvit/luvit-docs') technical API docs
-      li Resolved developer disputes and guided development of product using data driven testing and benchmarks, published 
+      li Resolved developer disputes and guided development of product using Kafka client benchmarking, published 
         +link('https://developer.rackspace.com/blog/Apache-Kafka-Client-Benchmarks/') benchmarks 
         | to the Rackspace dev blog
       li Halved deployment times with automation 
         +link('https://github.com/racker/dreadnot') patches 
-      li Discovered security holes and high interest areas for development by writing and using data science tools
+      li Discovered security holes and high interest areas for development by writing and using data science tools using ELK
       li Coordinated volunteer efforts for Rax.io, internal 500 attendee conference
       li Patches sent and accepted upstream to 10+ opensource projects including Python's
         +link('https://github.com/pypa/pip/pull/3372') pip, 
@@ -45,39 +63,44 @@
         +link('https://betakit.com/airbnb-of-entertainment-sparkgig-takes-the-stage-on-thedisruptors/') Betakit, 
         +link('http://www.cbc.ca/dragonsden/pitches/sparkgig') Dragon's Den 
         | and raised ~$1m  
-  .job
-    span
-      h2 
-        a(href='https://github.com/farmtable') Farmtable
-      h5 September - December 2014
-      h6 Waterloo, Canada
-    h3 Freelance full-stack developer, Tech lead
-    h4 Ruby, Rails, Coffeescript, SQL, AWS
-    p Led 4 person team to build startup MVP (marketplace & scheduler)...
-  .job
-    span
-      h2
-        a(href='http://www.flybrizi.com/') Brizi
-      h5 April - May 2014
-      h6 Waterloo, Canada
-    h3 Freelance full-stack developer
-    h4 JS, PHP, MySQL | CoffeeScript, Jade, Stylus, Bootstrap, ffmpeg
-    p Built social, video & image webviews, Twitter integration...
-  .job
-    span
-      h2 
-        a(href='www.prepr.org') Prepr Foundation
-      h5 July - August 2013
-      h6 Toronto, Canada
-    h3 Freelance web and mobile developer
-    h4 JS, Cordova, Android/Java, SocketIO, Jquery UI, SQL, NodeJS
-    p Built cross-platform mobile app with barcode scanning...
-  .job
-    span
-      h2 
-        a(href='http://veloxsites.com/') 411.ca | Veloxsites
-      h5 May - July 2013
-      h6 Toronto, Canada
-    h3 Full-Stack developer intern
-    h4 PHP, JS, HTML, MySQL, Bootstrap
-    p Prevented mysql injection attacks, increased sales conversion 10% with widgets...
+
+  .trigger.jobCollapseTrigger
+    button(onclick="$('.collapsedJobs').toggle(); $('.jobCollapseTrigger').toggle();")
+      p +4 more... (1 yr web & mobile dev experience)
+  .collapsedJobs.collapsed
+    .job
+      span
+        h2 
+          a(href='https://github.com/farmtable') Farmtable
+        h5 September - December 2014
+        h6 Waterloo, Canada
+      h3 Freelance full-stack developer, Tech lead
+      h4 Ruby, Rails, Coffeescript, SQL, AWS
+      p Led 4 person team to build startup MVP (marketplace & scheduler)...
+    .job
+      span
+        h2
+          a(href='http://www.flybrizi.com/') Brizi
+        h5 April - May 2014
+        h6 Waterloo, Canada
+      h3 Freelance full-stack developer
+      h4 JS, PHP, MySQL | CoffeeScript, Jade, Stylus, Bootstrap, ffmpeg
+      p Built social, video & image webviews, Twitter integration...
+    .job
+      span
+        h2 
+          a(href='www.prepr.org') Prepr Foundation
+        h5 July - August 2013
+        h6 Toronto, Canada
+      h3 Freelance web and mobile developer
+      h4 JS, Cordova, Android/Java, SocketIO, Jquery UI, SQL, NodeJS
+      p Built cross-platform mobile app with barcode scanning...
+    .job
+      span
+        h2 
+          a(href='http://veloxsites.com/') 411.ca | Veloxsites
+        h5 May - July 2013
+        h6 Toronto, Canada
+      h3 Full-Stack developer intern
+      h4 PHP, JS, HTML, MySQL, Bootstrap
+      p Prevented mysql injection attacks, increased sales conversion 10% with widgets...
