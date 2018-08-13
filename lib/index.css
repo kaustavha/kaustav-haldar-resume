@@ -178,7 +178,13 @@ hr.grey:before {
   top: 50%;
   z-index: 1;
 }
+.header {
+  padding-top: 15px;
+}
 @media print {
+  .header {
+    padding-top: 15px;
+  }
   .min {
     margin-bottom: -20px;
   }
