@@ -128,6 +128,11 @@ ul li:before {
   border: 2px dotted #308dff;
   padding: 2px;
 }
+.trigger2 button {
+  background: #fff;
+  padding: 1px;
+  border: none;
+}
 .alignLeft {
   text-align: left;
 }
