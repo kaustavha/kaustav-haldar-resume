@@ -1,0 +1,133 @@
+@import '../lib/fonts.css';
+.collapsed {
+  display: none;
+}
+.headings,
+h1,
+h2,
+h3,
+.category,
+.categoryCenter,
+.legend {
+  text-transform: capitalize;
+  font-family: 'Karma', serif;
+  color: #333;
+  padding: 2px;
+}
+.sideHeader,
+h5,
+h6 {
+  font-size: 85%;
+  font-family: 'Cantarell', sans-serif;
+  float: right;
+  display: inline;
+}
+.contents,
+h4,
+p,
+ul li {
+  font-family: 'Cantarell', sans-serif;
+  color: #4d4d4d;
+  font-weight: 300;
+}
+h1 {
+  font-size: 110%;
+}
+h2 {
+  font-size: 120%;
+  font-weight: 800;
+}
+h3 {
+  font-size: 105%;
+  font-weight: 400;
+  margin: 0px 0px;
+}
+h4 {
+  font-size: 85%;
+  font-weight: 200;
+  line-height: 15px;
+  margin: 2px 0px;
+}
+h5 {
+  margin-top: -20px;
+}
+p {
+  line-height: 20px;
+}
+.styleNone,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #308dff;
+}
+a:visited {
+  color: #808080;
+}
+a:before {
+  content: " ";
+}
+.sectionBlockStyle {
+  margin: 5px 5px;
+  padding-left: 15px;
+  border-left: 1px solid #308dff;
+  display: block;
+}
+.section {
+  margin-left: 200px;
+  width: 750px;
+}
+.sectionContainer,
+.sectionContainerMid {
+  padding: 5px 0px;
+}
+.sectionContainerMid {
+  text-align: center;
+}
+.category,
+.legend {
+  float: left;
+  text-align: center;
+  font-size: 140%;
+  margin-top: 10px;
+  width: 190px;
+}
+.categoryCenter {
+  font-size: 140%;
+  text-align: center;
+}
+.legend {
+  font-size: 100%;
+  margin-top: 80px;
+  margin-left: -175px;
+  max-width: 150px;
+  border: 1px solid #308dff;
+}
+ul li {
+  margin: 5px;
+  text-indent: -9px;
+  line-height: 20px;
+}
+ul li:before {
+  padding-right: 3px;
+  font-family: 'fontello';
+  font-size: 70%;
+  content: '\e80b  ';
+}
+.cvTrigger {
+  z-index: 1000;
+  position: fixed;
+  left: 5px;
+}
+.trigger button {
+  background: #fff;
+  border: 2px dotted #308dff;
+  padding: 2px;
+}
+.alignLeft {
+  text-align: left;
+}
+.alignMid {
+  text-align: center;
+}
