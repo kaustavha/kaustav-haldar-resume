@@ -1,19 +1,26 @@
 {
   "name": "CV",
   "author": "kaustavha",
-  "license": "Feel free to use this as a boilerplate if you like",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaustavha/kaustav-haldar-resume"
+  },
   "devDependencies": {
-    "browser-sync": "latest",
-    "gulp": "latest",
-    "gulp-clean": "^0.3.1",
-    "gulp-coffee": "latest",
-    "gulp-jade": "latest",
-    "gulp-stylus": "latest",
-    "gulp-util": "latest"
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-coffee": "^3.0.3",
+    "gulp-stylus": "^2.7.0",
+    "gulp-util": "^3.0.8",
+    "pug": "^2.0.4",
+    "stylus": "^0.54.5",
+    "gulp-pug": "^3.0.0",
+    "gulp-jade": "^1.1.0"
   },
   "scripts": {
     "build": "gulp",
     "clean": "gulp clean",
-    "git": "git checkout master && git add . && git commit -am 'Autoupdate' && git push origin master && cd .. && npm run update"
+    "git": "git add . && git commit -am 'Autoupdate' && git push && cd .. && npm run update"
   }
 }

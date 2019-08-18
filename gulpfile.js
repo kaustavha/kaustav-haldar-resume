@@ -1,46 +1,50 @@
 var gulp = require('gulp'),
-    log = require('gulp-util').log,
     jade = require('gulp-jade'),
     stylus = require('gulp-stylus'),
-    coffee = require('gulp-coffee'),
     browserSync = require('browser-sync');
 
-gulp.task('scripts', function() {
-  gulp.src('./src/**/*.coffee')
-    .pipe(coffee({bare: true}).on('error', log))
-    .pipe(gulp.dest('./public/assets'))
-});
+const paths = {
+  styles: {
+    src: 'src/**/index.styl',
+    dest: 'lib'
+  },
+  templates: {
+      src: './src/index.jade',
+      dest: './'
+  }
+};
 
-gulp.task('templates', function() {
+function templates() {
   var locs = {};
-  gulp.src('./src/index.jade')
-    .pipe(jade({pretty:true}))
-    .pipe(gulp.dest('./'))
-});
+  return gulp.src(paths.templates.src)
+    .pipe(jade({locals: locs, pretty: true}))
+    .pipe(gulp.dest(paths.templates.dest));
+};
 
-gulp.task('styles', function() {
-  gulp.src('./src/styles/index.styl')
+function styles() {
+  return gulp.src(paths.styles.src)
     .pipe(stylus())
-    .pipe(gulp.dest('./lib'))
-});
+    .pipe(gulp.dest(paths.styles.dest));
+}
 
-gulp.task('watch', function() {
-  log('Watching files');
-  gulp.watch('./src/**/*', ['build']);
-});
+function watch() {
+  gulp.watch(paths.templates.src, templates);
+  gulp.watch(paths.styles.src, styles);
+}
 
-gulp.task('browserSync', ['build'], function() {
+function serve() {
   browserSync({
     server: {
-      baseDir: './'
+      baseDir: paths.templates.dest
     }
   });
-});
+};
+var build = gulp.series(gulp.parallel(styles, templates), serve);
 
-gulp.task('clean', function() {
-  gulp.src(['./index.html', './lib'], {read: false}).pipe(clean());
-});
-
-//define cmd line default task
-gulp.task('build', ['templates', 'styles', 'scripts']);
-gulp.task('default', ['build', 'watch', 'browserSync']);
+exports.styles = styles;
+exports.watch = watch;
+exports.build = build;
+/*
+ * Define default task that can be called by just running `gulp` from cli
+ */
+exports.default = build;
