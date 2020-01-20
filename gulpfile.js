@@ -39,7 +39,7 @@ function serve() {
     }
   });
 };
-var build = gulp.series(gulp.parallel(styles, templates), serve);
+var build = gulp.series(gulp.parallel(styles, templates), gulp.parallel(serve, watch));
 
 exports.styles = styles;
 exports.watch = watch;
