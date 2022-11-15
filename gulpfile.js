@@ -6,6 +6,7 @@ var gulp = require('gulp'),
 const paths = {
   styles: {
     src: 'src/**/index.styl',
+    watch_src: ['src/**/*.styl'],
     dest: 'lib'
   },
   templates: {
@@ -30,7 +31,7 @@ function styles() {
 
 function watch() {
   gulp.watch(paths.templates.watch_src, templates);
-  gulp.watch(paths.styles.src, styles);
+  gulp.watch(paths.styles.watch_src, styles);
 }
 
 function serve() {

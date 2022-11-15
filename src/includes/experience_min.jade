@@ -1,46 +1,30 @@
 +sectionMidMin('Experience')
+  include jobs/meta
 
-  .job
-      span
-        h2
-          a(href='https://www.scribd.com/') Scribd
-        h5 December 2019 - present
-        h6 Remote - Based in Toronto, CA
-      h3 Software Engineer II - Content Engineering
-      h4 Scala, Spark, Hadoop, Ruby on Rails, Redis, Sidekiq, Python, SQL, Databricks, DataDog, Sentry, Airflow, MLFlow
-      ul
-        li Helping a rapidly growing startup expand and scale 
-        li Architected and implemented content understanding systems and machine learning pipelines for training & inference
-        li Incident response and ownership over our upload spam detection system
-        li Production data changes for millions of SQL rows and built support tooling
-        li Wrote and migrated high throughput nightly jobs in Spark/Scala/Airflow
-        li External audit support on data and system functionality information 
-        li Supporting ML/DS/AR teams with full stack engineering spanning devops, ML model internals, serving, throughput, versioning, user-facing code, security, incidence response, backfills and production data changes
+  include jobs/scribd
 
   .job
     span
       h2
         a(href='https://www.ibm.com/ca-en/marketplace/business-intelligence') IBM Cognos Analytics
-      h5 January 2018 - April 2019
-      h6 Ottawa, CA
+      h5 Jan 2018 - Apr 2019
+      h6 Ottawa, Canada
     h3 Software Engineer
     h4 JavaScript (ES6), HTML, SASS, React, JSX, Mobex, Travis, Python, Tensorflow, Docker
     ul
       li Architected and delivered 3 multi team & codebase features; auto-grouping, copy-paste, data-binning
-      li Championed code-base modernization by using ES6, React
-      li Reduced CI failures by 90% by driving Travis integration
       li Filed 2 patents related to web app architecture and hybrid blockchains
+      li Championed code-base modernization using ES6, React
+      li Reduced CI failures 90% by driving Travis integration
       li Won an internal machine learning competition using Tensorflow
       li Mentored interns and full-timers, ran workshops on blockchains, Travis, git
-      li Created devtools, improving developer productivity and halving new hire onboarding time
-      li Interviewed candidates and contributed to internal interview questions
-      li Fixed ~130 defects
+      li Created devtool scripts which cut onboarding by 50%
 
   .job
     span
       h2
         a(href='http://www.rackspace.com/') Rackspace
-      h5 July 2015 - March 2016
+      h5 Jul 2015 - Mar 2016
       h6 San Francisco, USA
     h3 Software Engineer Intern
     h4 Go, Lua, JS, Python, Ruby, Java, C++, Bash;  Hadoop, Hive, Kafka, MongoDB, ElasticSearch, Logstash, Kibana, Grafana, Docker, Chef, Travis, Jenkins, Ansible
@@ -48,31 +32,27 @@
       li Achieved a 10x speed and capacity increase in a distributed monitoring system using Go microservices & Kafka
       li Doubled 
         +link('https://github.com/virgo-agent-toolkit/rackspace-monitoring-agent') Lua monitoring agent 
-        | coverage area by writing or integrating ~100 plugins, included customer outreach
-      li Improved extensibility of agent by writing 
-        +link('https://github.com/luvit/luvit-docs') docs for the luvit framework
+        | coverage by writing or integrating ~100 plugins, included customer outreach
       li Resolved developer disputes and guided development using Kafka client benchmarking & published 
         +link('https://developer.rackspace.com/blog/Apache-Kafka-Client-Benchmarks/') benchmarks 
         | to the Rackspace dev blog
       li Halved deployment times with automation 
         +link('https://github.com/racker/dreadnot') patches 
-      li Patches sent and accepted upstream to 10+ opensource projects including Python's
+      li Patches sent and accepted upstream to 10+ opensource projects including
         +link('https://github.com/pypa/pip/pull/3372') pip, 
-        +link('https://github.com/facebook/hhvm/commit/5a2fad570d64bb0c0f63286e1c76262a968c2ee2') facebook/HHVM, 
-        +link('https://github.com/luvit/luvit/commits?author=kaustavha') luvit, 
-        +link('https://github.com/racker/dreadnot/commits?author=kaustavha') racker/dreadnot, 
-        +link('https://github.com/docker/machine/pull/2652') docker/machine, 
-        +link('https://github.com/lmenezes/elasticsearch-kopf/commits?author=kaustavha') elasticsearch-kopf
+        +link('https://github.com/facebook/hhvm/commit/5a2fad570d64bb0c0f63286e1c76262a968c2ee2') HHVM, 
+        +link('https://github.com/docker/machine/pull/2652') docker 
 
-  .job.trigger2.jobCollapseTrigger
-    button(onclick="$('.collapsedJobs').toggle(); $('.jobCollapseTrigger').toggle();")
-      a +5 more... (2 years of experience in full stack web & mobile development including founding a startup featured on Dragon's Den, internships and contracts; Start: 2013)
+  .job
+    .trigger2.jobCollapseTrigger
+        button(onclick="$('.collapsedJobs').toggle(); $('.jobCollapseTrigger').toggle();")
+          a +5 more... (2 years of experience in full stack web & mobile development including founding a startup featured on Dragon's Den, internships & contracts.)
   .collapsedJobs.collapsed
     .job
       span
         h2 
           a(href='http://www.sparkgig.com') SparkGig
-        h5 September 2013 - April 2014
+        h5 Sep 2013 - Apr 2014
         h6 Waterloo, CA
       h3 Co-Founder, Full-stack Developer
       h4 MongoDB/NoSQL, ExpressJS, AngularJS, NodeJS, Nginx, AWS
@@ -88,7 +68,7 @@
       span
         h2 
           a(href='https://github.com/farmtable') Farmtable
-        h5 September - December 2014
+        h5 Sep - Dec 2014
         h6 Waterloo, CA
       h3 Freelance full-stack developer, Tech lead
       h4 Ruby, Rails, Coffeescript, SQL, AWS
@@ -97,7 +77,7 @@
       span
         h2
           a(href='http://www.flybrizi.com/') Brizi
-        h5 April - May 2014
+        h5 Apr - May 2014
         h6 Waterloo, CA
       h3 Freelance full-stack developer
       h4 JS, PHP, MySQL | CoffeeScript, Jade, Stylus, Bootstrap, ffmpeg
@@ -106,7 +86,7 @@
       span
         h2 
           a(href='www.prepr.org') Prepr Foundation
-        h5 July - August 2013
+        h5 Jul - Aug 2013
         h6 Toronto, CA
       h3 Freelance web and mobile developer
       h4 JS, Cordova, Android/Java, SocketIO, Jquery UI, SQL, NodeJS
@@ -115,7 +95,7 @@
       span
         h2 
           a(href='http://veloxsites.com/') 411.ca | Veloxsites
-        h5 May - July 2013
+        h5 May - Jul 2013
         h6 Toronto, CA
       h3 Full-Stack developer intern
       h4 PHP, JS, HTML, MySQL, Bootstrap

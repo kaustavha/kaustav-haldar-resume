@@ -11,7 +11,6 @@ h3,
 .legend {
   text-transform: capitalize;
   font-family: 'Karma', serif;
-  color: #333;
   padding: 2px;
 }
 .sideHeader,
@@ -31,13 +30,16 @@ ul li {
   font-weight: 300;
 }
 h1 {
+  color: #000;
   font-size: 110%;
 }
 h2 {
+  color: #308dff;
   font-size: 120%;
   font-weight: 800;
 }
 h3 {
+  color: #333;
   font-size: 105%;
   font-weight: 400;
   margin: 0px 0px;
@@ -90,6 +92,7 @@ a:before {
 }
 .category,
 .legend {
+  color: #333;
   float: left;
   text-align: center;
   font-size: 140%;
@@ -97,6 +100,7 @@ a:before {
   width: 190px;
 }
 .categoryCenter {
+  color: #333;
   font-size: 140%;
   text-align: center;
 }
@@ -237,11 +241,10 @@ hr.grey:before {
     margin-bottom: 0px;
   }
   a {
-    text-decoration: none;
-    color: #333;
+    color: #308dff !important;
   }
   a:visited {
-    color: #333;
+    color: #308dff !important;
   }
   #print {
     color: #308dff;

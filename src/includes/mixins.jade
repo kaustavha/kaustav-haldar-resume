@@ -44,3 +44,18 @@ mixin link(url)
   a(href= url target='_blank')
     if block
       block
+
+mixin link_with_text(url, txt)
+  a(href= url target='_blank')= txt
+
+mixin experience_job(employer, url, duration, location, role, tech)
+    .job
+      span
+        h2
+            +link_with_text(url, employer)
+        h5= duration
+        h6= location
+      h3= role
+      h4= tech 
+      if block
+        block
