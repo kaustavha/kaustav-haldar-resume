@@ -21,6 +21,7 @@
   "scripts": {
     "build": "gulp",
     "clean": "gulp clean",
-    "git": "git commit -am 'Autoupdate' && git push && cd .. && npm run update"
+    "sanity": "[ \"$(git config user.name)\" == \"Kaustav Haldar\" ] && echo \"Sanity Check for user name Passed \" ",
+    "git": "npm run sanity && git commit -am 'Autoupdate' && git push && cd .. && npm run update"
   }
 }
